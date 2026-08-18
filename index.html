@@ -2,150 +2,560 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Subham | Premium Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Subham | Premium Portfolio</title>
+
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Subham<span>.</span></h2>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Background Effects -->
+    <div class="bg-blur blur-one"></div>
+    <div class="bg-blur blur-two"></div>
+    <div class="bg-blur blur-three"></div>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
 
-        <div class="badge">🚀 Available for Freelance</div>
+            <a href="#home" class="logo">
+                Subham<span>.</span>
+            </a>
 
-        <h1>Hello, I'm <span>Subham</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <h3 class="typing"></h3>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content reveal">
+
+            <div class="badge">
+                <span class="status-dot"></span>
+                Available for Freelance
+            </div>
+
+            <p class="hero-small-text">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hello, I'm
+                <span>Subham</span>
+            </h1>
+
+            <h2 class="typing"></h2>
+
+            <p class="hero-description">
+                I build
+                <strong>premium, modern & responsive</strong>
+                web experiences that help brands stand out in the digital world.
+            </p>
+
+            <!-- Stats -->
+            <div class="stats">
+
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="1">0</span>+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="15">0</span>+</h3>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="10">0</span>+</h3>
+                    <p>Happy Clients</p>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="btn outline-btn">
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
+
+            </div>
+
+            <!-- Social Icons -->
+            <div class="socials">
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Profile Image -->
+        <div class="hero-img reveal">
+
+            <div class="image-glow"></div>
+
+            <div class="image-container">
+
+                <div class="image-ring"></div>
+
+                <img
+                    src="MyPhoto.jpeg"
+                    alt="Subham Profile Photo"
+                >
+
+                <div class="floating-card card-one">
+                    <i class="fas fa-code"></i>
+                    <span>Frontend</span>
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Developer</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <div class="section-header reveal">
+
+            <span class="section-tag">ABOUT ME</span>
+
+            <h2 class="section-title">
+                Turning ideas into
+                <span>digital experiences.</span>
+            </h2>
+
+            <p>
+                I'm a passionate frontend developer who loves creating
+                beautiful, fast and user-friendly websites. I focus on clean
+                UI, smooth animations and responsive experiences that work
+                perfectly across all devices.
+            </p>
+
+        </div>
+
+        <div class="about-grid reveal">
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+                <h3>Creative Design</h3>
+
+                <p>
+                    Creating modern and visually appealing interfaces
+                    with attention to every detail.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Responsive</h3>
+
+                <p>
+                    Websites that look amazing on phones,
+                    tablets and desktop screens.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+
+                <h3>Fast Performance</h3>
+
+                <p>
+                    Lightweight and optimized experiences
+                    built for speed and smooth interaction.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+        <div class="section-header reveal">
+
+            <span class="section-tag">MY SKILLS</span>
+
+            <h2 class="section-title">
+                Tools I use to
+                <span>build the web.</span>
+            </h2>
+
+        </div>
+
+        <div class="skill-box reveal">
+
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+
+        <div class="section-header reveal">
+
+            <span class="section-tag">MY WORK</span>
+
+            <h2 class="section-title">
+                Featured
+                <span>Projects.</span>
+            </h2>
+
+            <p>
+                A selection of projects I've designed and developed
+                with modern technologies.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+                        alt="Cake Shop Website"
+                    >
+
+                    <div class="project-overlay">
+                        <a href="#" aria-label="View project">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">01</span>
+
+                    <h3>Cake Shop Website</h3>
+
+                    <p>
+                        Premium frontend design for a modern bakery
+                        and cake shop.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                        alt="Student Dashboard"
+                    >
+
+                    <div class="project-overlay">
+                        <a href="#" aria-label="View project">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>Student Dashboard</h3>
+
+                    <p>
+                        Modern dashboard with clean cards,
+                        statistics and interactive UI.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Dashboard</span>
+                        <span>UI/UX</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+
+                <div class="project-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=900&q=80"
+                        alt="Travel Website"
+                    >
+
+                    <div class="project-overlay">
+                        <a href="#" aria-label="View project">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">03</span>
+
+                    <h3>Travel Website</h3>
+
+                    <p>
+                        Responsive tourism website focused on
+                        beautiful destinations and smooth UX.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Responsive</span>
+                        <span>CSS</span>
+                        <span>UI Design</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <div class="contact-wrapper reveal">
+
+            <div class="contact-info">
+
+                <span class="section-tag">GET IN TOUCH</span>
+
+                <h2>
+                    Let's build something
+                    <span>amazing together.</span>
+                </h2>
+
+                <p>
+                    Have a project in mind or want to work together?
+                    Send me a message and let's turn your idea into reality.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <small>Email</small>
+                            <span>subhambehera04.03.2005@email.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <small>Location</small>
+                            <span>India</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder=" "
+                        required
+                    >
+                    <label for="name">Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder=" "
+                        required
+                    >
+                    <label for="email">Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea
+                        id="message"
+                        placeholder=" "
+                        required
+                    ></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Subham<span>.</span>
+        </div>
 
         <p>
-            I build <strong>premium, modern & responsive</strong> web experiences
-            that help brands stand out in the digital world.
+            Designed & developed with
+            <span>♥</span> by Subham
         </p>
 
-        <!-- Stats -->
-        <div class="stats">
-            <div>
-                <h2>1+</h2>
-                <span>Years Experience</span>
-            </div>
-            <div>
-                <h2>15+</h2>
-                <span>Projects</span>
-            </div>
-            <div>
-                <h2>10+</h2>
-                <span>Happy Clients</span>
-            </div>
-        </div>
+        <div class="footer-socials">
 
-        <!-- Buttons -->
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#" class="btn outline">Download CV</a>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="socials">
             <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
 
-    <div class="hero-img">
-        <img src="MyPhoto.jpeg" alt="Profile">
-    </div>
-</section>
-
-
-<!-- About -->
-<section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <p>
-        I'm a passionate frontend developer skilled in creating premium websites
-        using HTML, CSS, and JavaScript. I love clean UI, smooth animations,
-        and responsive designs.
-    </p>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="skills">
-    <h2 class="section-title">My Skills</h2>
-
-    <div class="skill-box">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Bootstrap</div>
-        <div class="skill">Git & GitHub</div>
-    </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="">
-            <h3>Cake Shop Website</h3>
-            <p>Premium frontend design for a bakery shop.</p>
         </div>
 
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
-            <h3>Student Dashboard</h3>
-            <p>Modern dashboard with charts and UI cards.</p>
-        </div>
+        <p class="copyright">
+            © 2026 Subham Behera. All rights reserved.
+        </p>
 
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93" alt="">
-            <h3>Travel Website</h3>
-            <p>Responsive tourism website UI.</p>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
 
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+    <!-- Back To Top -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Subham Behera | Designed with ❤️</p>
-</footer>
 
-<script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
+
